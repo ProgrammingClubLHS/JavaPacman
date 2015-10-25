@@ -16,7 +16,7 @@ public class PacWorld extends World
     public PacWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(30, 20, 20); 
     }
 }
 /*
