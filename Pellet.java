@@ -11,7 +11,7 @@ public class Wall extends Actor
 {
     public Wall(){
         super();
-        getImage().scale(10,10);
+        getImage().scale(8,8);
     }
     
     /**
