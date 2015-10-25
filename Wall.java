@@ -21,6 +21,6 @@ public class Wall extends Actor
      */
     public void act() 
     {
-        wall1
+    
     }    
 }
