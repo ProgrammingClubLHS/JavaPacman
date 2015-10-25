@@ -12,10 +12,10 @@ public class MovingObject extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      * THE COMMUNIST REVOLUTION STARTS WITH YOU!
      */
-    protected boolean wallInFront(){
+    protected wallInFront(int rotationCheck){
         Object[] inFront = (getObjectsAtOffset(
-                                    (int)(Math.cos(getRotation() * Math.PI / 180)),
-                                    (int)(Math.sin(getRotation() * Math.PI / 180)),
+                                    (int)(Math.cos(rotationCheck * Math.PI / 180)),
+                                    (int)(Math.sin(rotationCheck * Math.PI / 180)),
                                     Wall.class).toArray()
                                 );
         boolean wallPresence = false;
@@ -33,7 +33,7 @@ public class MovingObject extends Actor
     {
         for(int i = 0;i < 3; i++){
             try{
-                if(!wallInFront()){
+                if(!wallInFront(getRotation())){
                     move(1);
                 }
             }catch( RuntimeException e){
