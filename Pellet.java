@@ -2,14 +2,14 @@ import greenfoot.*;
 
 
 /**
- * Write a description of class WALL here.
- * 
+ * Write a description of class Pellet here.
+ * THE COMMUNIST REVOLUTION STARTS WITH YOU!
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Wall extends Actor
+public class Pellet extends Actor
 {
-    public Wall(){
+    public Pellet(){
         super();
         getImage().scale(8,8);
     }
