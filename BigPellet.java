@@ -2,20 +2,20 @@ import greenfoot.*;
 
 
 /**
- * Write a description of class WALL here.
+ * Write a description of class BigPellet here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Wall extends Actor
+public class BigPellet extends Actor
 {
-    public Wall(){
+    public BigPellet(){
         super();
         getImage().scale(14,14);
     }
     
     /**
-     * Act - do whatever the WALL wants to do. This method is called whenever
+     * Act - do whatever the BigPellet wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
