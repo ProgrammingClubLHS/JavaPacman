@@ -10,9 +10,10 @@ import greenfoot.*;
  */
 public class Wall extends Actor
 {
+    public static final int size = 20;
     public Wall(){
         super();
-        getImage().scale(20,20);
+        getImage().scale(size,size);
     }
     
     /**
