@@ -19,14 +19,21 @@ public class Pacman extends MovingObject
     }
     public void act() 
     {
-        if(Greenfoot.isKeyDown("d")){
+       if(Greenfoot.isKeyDown("d") && !wallInFront(0)){
             setRotation(0);
-        }else if(Greenfoot.isKeyDown("a")){
+        }else if(Greenfoot.isKeyDown("a") && !wallInFront(180)){
             setRotation(180);
-        }else if(Greenfoot.isKeyDown("s")){
+        }else if(Greenfoot.isKeyDown("s") && !wallInFront(90)){
             setRotation(90);
-        }else if(Greenfoot.isKeyDown("w")){
+        }else if(Greenfoot.isKeyDown("w") && !wallInFront(270)){
             setRotation(270);
+        }
+        if(getX() == 0 && getRotation() == 180){
+            setLocation(getWorld().getWidth(),getY());
+        }
+        
+        if(getX() == getWorld().getWidth() && getRotation() == 0){
+            setLocation(0,getY());
         }
         super.act();
     }    
