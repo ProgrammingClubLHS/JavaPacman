@@ -14,7 +14,7 @@ public class Pacman extends MovingObject
      */
     public Pacman(){
         super();
-        getImage().scale(20,20);
+        getImage().scale(Wall.size,Wall.size);
     
     }
     public void act() 
