@@ -10,6 +10,7 @@ public class MovingObject extends Actor
     /**
      * Act - do whatever the MovingObject wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
+     * THE COMMUNIST REVOLUTION STARTS WITH YOU!
      */
     protected boolean wallInFront(){
         Object[] inFront = (getObjectsAtOffset(
