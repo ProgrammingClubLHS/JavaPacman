@@ -12,22 +12,20 @@ public class MovingObject extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     protected boolean wallInFront(){
-        Object[] intersectingThings = getIntersectingObjects(Wall.class).toArray();
+        Object[] inFront = (getObjectsAtOffset(
+                                    (int)(Math.cos(getRotation() * Math.PI / 180)),
+                                    (int)(Math.sin(getRotation() * Math.PI / 180)),
+                                    Wall.class).toArray()
+                                );
         boolean wallPresence = false;
-        if(intersectingThings != null && intersectingThings.length > 0){
-            for(int index = 0; index < intersectingThings.length; index++){
-                Wall possibleWall = (Wall)(intersectingThings[index]);
-                if      (possibleWall.getX() > getX() && getRotation() == 0){
+        if(inFront != null && inFront.length > 0){
+            for(int index = 0; index < inFront.length; index++){
+                Wall possibleWall = (Wall)(inFront[index]);
+                if(possibleWall != null){
                     wallPresence = true;
-                }else if(possibleWall.getX() < getX() && getRotation() == 180){
-                    wallPresence = true;
-                }else if(possibleWall.getY() > getY() && getRotation() == 90){
-                     wallPresence = true;
-                }else if(possibleWall.getY() < getY() && getRotation() == 270){
-                     wallPresence = true;
                 }
             }
-        }
+        }               
         return wallPresence;
     }
     public void act() 
