@@ -11,7 +11,7 @@ public class PacWorld extends World
 
     /**
      * Constructor for objects of class PacWorld.
-     * 
+     * THE COMMUNIST REVOLUTION STARTS WITH YOU!
      */
     public PacWorld()
     {    
