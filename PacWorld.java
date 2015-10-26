@@ -6,11 +6,9 @@ import greenfoot.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PacWorld extends World
-public PacWorld(){    
-        // Create a new world with 28x32 cells with a cell size of 20x20 pixels.
-        super(28, 32, Wall.size); 
-        int[][] cell= {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+public class PacWorld extends World{
+public static final int[][] cell= 
+                        {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
                        {1,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,1},
                        {1,2,1,1,1,1,2,1,1,1,1,1,2,1,1,2,1,1,1,1,1,2,1,1,1,1,2,1},
                        {1,3,1,0,0,1,2,1,0,0,0,1,2,1,1,2,1,0,0,0,1,2,1,0,0,1,3,1},
@@ -41,6 +39,10 @@ public PacWorld(){
                        {1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1},
                        {1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1},
                        {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},};
+public PacWorld(){    
+        // Create a new world with 28x32 cells with a cell size of 20x20 pixels.
+        super(28, 32, Wall.size); 
+        
         for(int row = 0; row < cell.length; row++){
             for(int col = 0; col < cell[row].length; col++){
                 if(cell[row][col] == 1){
@@ -54,6 +56,7 @@ public PacWorld(){
             
         }
     }
+}
 /*
 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
 {1,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,1},
