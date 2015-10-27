@@ -36,5 +36,9 @@ public class Pacman extends MovingObject
             setLocation(0,getY());
         }
         super.act();
+        if(isTouching(Pellet.class)){
+            removeTouching(Pellet.class);
+            score++;
+        }
     }    
 }
