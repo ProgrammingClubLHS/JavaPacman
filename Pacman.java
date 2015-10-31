@@ -42,6 +42,18 @@ public class Pacman extends MovingObject
         if(isTouching(Pellet.class)){
             removeTouching(Pellet.class);
             score++;
+            String scoreOutput = "Score: ";
+            if(score < 10){
+                scoreOutput += "   " + score;
+            }else if(score < 100){
+                scoreOutput += "  " + score;
+            }else if(score < 1000){
+                scoreOutput += " " + score;
+            }else if(score <10000){
+                scoreOutput += score;
+            }
+
+            getWorld().showText(scoreOutput, 4, 0);
         }
     }    
 }
