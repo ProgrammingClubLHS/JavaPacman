@@ -1,4 +1,4 @@
 // Wall that ghosts can go through but Pacman can't
-public GhostWall extends World{
+public class GhostWall extends Wall{
   
 }
