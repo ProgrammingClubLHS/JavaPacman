@@ -11,7 +11,7 @@ public class BigPellet extends Actor
 {
     public BigPellet(){
         super();
-        getImage().scale(Wall.size * 7 / 10,Wall.size * 7 / 10);
+        getImage().scale(Wall.SIZE * 7 / 10,Wall.SIZE * 7 / 10);
     }
     
     /**
