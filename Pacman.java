@@ -12,9 +12,11 @@ public class Pacman extends MovingObject
      * Act - do whatever the Pacman wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private int score;
     public Pacman(){
         super();
         getImage().scale(Wall.size,Wall.size);
+        score = 0;
     
     }
     public void act() 
