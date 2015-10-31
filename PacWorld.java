@@ -55,6 +55,9 @@ public static final int[][] cell=
                 }else if(cell[row][col] == 7){
                     Pacman tempPacman = new Pacman();
                     addObject(tempPacman,col,row);
+                }else if(cell[row][col] == 6){
+                    GhostWall tempWall = new GhostWall();
+                    addObject(tempWall,col,row)
                 }
             }
         }
