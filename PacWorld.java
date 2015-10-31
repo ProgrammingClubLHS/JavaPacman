@@ -51,6 +51,10 @@ public PacWorld(){
                 }else if(cell[row][col] == 2){
                     Pellet tempPellet = new Pellet();
                     addObject(tempPellet,col,row);
+                }else if(cell[row][col] == 7){
+                    Pacman tempPacman = new Pacman();
+                    addObject(tempPacman,col,row);
+                }
                 }
             }
             
