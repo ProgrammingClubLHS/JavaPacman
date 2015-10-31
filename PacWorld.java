@@ -8,7 +8,8 @@ import greenfoot.*;
  */
 public class PacWorld extends World{
 public static final int[][] cell= 
-                        {{1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+                      {{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                       {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
                        {1,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,1},
                        {1,2,1,1,1,1,2,1,1,1,1,1,2,1,1,2,1,1,1,1,1,2,1,1,1,1,2,1},
                        {1,3,1,0,0,1,2,1,0,0,0,1,2,1,1,2,1,0,0,0,1,2,1,0,0,1,3,1},
@@ -39,9 +40,9 @@ public static final int[][] cell=
                        {1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1},
                        {1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1},
                        {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},};
-public PacWorld(){    
+  public PacWorld(){    
         // Create a new world with 28x32 cells with a cell size of 20x20 pixels. THE COMMUNIST REVOLUTION STARTS WITH YOU
-        super(28, 32, Wall.SIZE); 
+        super(28, 33, Wall.SIZE); 
         
         for(int row = 0; row < cell.length; row++){
             for(int col = 0; col < cell[row].length; col++){
@@ -55,12 +56,11 @@ public PacWorld(){
                     Pacman tempPacman = new Pacman();
                     addObject(tempPacman,col,row);
                 }
-                }
             }
-            
         }
-    }
+  }
 }
+
 /*
 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
 {1,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,1},
