@@ -40,7 +40,7 @@ public static final int[][] cell=
                        {1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1},
                        {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},};
 public PacWorld(){    
-        // Create a new world with 28x32 cells with a cell size of 20x20 pixels.
+        // Create a new world with 28x32 cells with a cell size of 20x20 pixels. THE COMMUNIST REVOLUTION STARTS WITH YOU
         super(28, 32, Wall.size); 
         
         for(int row = 0; row < cell.length; row++){
