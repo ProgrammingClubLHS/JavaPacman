@@ -11,7 +11,7 @@ public class Pellet extends Actor
 {
     public Pellet(){
         super();
-        getImage().scale(Wall.size * 2 / 5,Wall.size * 2 / 5);
+        getImage().scale(Wall.SIZE * 2 / 5,Wall.SIZE * 2 / 5);
     }
     
     /**
