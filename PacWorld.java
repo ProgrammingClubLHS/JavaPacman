@@ -41,7 +41,7 @@ public static final int[][] cell=
                        {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},};
 public PacWorld(){    
         // Create a new world with 28x32 cells with a cell size of 20x20 pixels. THE COMMUNIST REVOLUTION STARTS WITH YOU
-        super(28, 32, Wall.size); 
+        super(28, 32, Wall.SIZE); 
         
         for(int row = 0; row < cell.length; row++){
             for(int col = 0; col < cell[row].length; col++){
