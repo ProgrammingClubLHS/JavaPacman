@@ -11,6 +11,7 @@ public class Pacman extends MovingObject
     /**
      * Act - do whatever the Pacman wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
+     * THE COMMUNIST REVOLUTION STARTS WITH YOU
      */
     private int score;
     public Pacman(){
