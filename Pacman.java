@@ -15,7 +15,7 @@ public class Pacman extends MovingObject
     private int score;
     public Pacman(){
         super();
-        getImage().scale(Wall.size,Wall.size);
+        getImage().scale(Wall.SIZE,Wall.SIZE);
         score = 0;
     
     }
