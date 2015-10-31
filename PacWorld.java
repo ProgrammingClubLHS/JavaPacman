@@ -57,7 +57,7 @@ public static final int[][] cell=
                     addObject(tempPacman,col,row);
                 }else if(cell[row][col] == 6){
                     GhostWall tempWall = new GhostWall();
-                    addObject(tempWall,col,row)
+                    addObject(tempWall,col,row);
                 }
             }
         }
