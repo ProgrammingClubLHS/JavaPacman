@@ -23,7 +23,7 @@ public static final int[][] cell=
                        {0,0,0,0,0,1,2,1,1,0,0,0,0,0,0,0,0,0,0,1,1,2,1,0,0,0,0,0},
                        {0,0,0,0,0,1,2,1,1,0,1,1,1,6,6,1,1,1,0,1,1,2,1,0,0,0,0,0},
                        {1,1,1,1,1,1,2,1,1,0,1,0,0,0,0,0,0,1,0,1,1,2,1,1,1,1,1,1},
-                       {0,0,0,0,0,0,2,0,0,0,1,5,5,5,5,5,0,1,0,0,0,2,0,0,0,0,0,0},
+                       {0,0,0,0,0,0,2,0,0,0,1,0,8,9,10,5,0,1,0,0,0,2,0,0,0,0,0,0},
                        {1,1,1,1,1,1,2,1,1,0,1,0,0,0,0,0,0,1,0,1,1,2,1,1,1,1,1,1},
                        {0,0,0,0,0,1,2,1,1,0,1,1,1,1,1,1,1,1,0,1,1,2,1,0,0,0,0,0},
                        {0,0,0,0,0,1,2,1,1,0,0,0,0,7,0,0,0,0,0,1,1,2,1,0,0,0,0,0},
@@ -56,8 +56,20 @@ public static final int[][] cell=
                     Pacman tempPacman = new Pacman();
                     addObject(tempPacman,col,row);
                 }else if(cell[row][col] == 6){
-                    GhostWall tempWall = new GhostWall();
+                    GhostWall tempChostWall = new GhostWall();
+                    addObject(tempGhostWall,col,row);
+                }else if(cell[row][col] == 5){
+                    Blinky tempBlinky = new Blinky();
                     addObject(tempWall,col,row);
+                }else if(cell[row][col] == 8){
+                    Clyde tempClyde = new Clyde();
+                    addObject(tempClyde,col,row);
+                }else if(cell[row][col] == 9){
+                    Inky tempClyde = new Inky();
+                    addObject(tempClyde,col,row);
+                }else if(cell[row][col] == 10){
+                    Pinky tempPinky = new Pinky();
+                    addObject(tempPinky,col,row);
                 }
             }
         }
