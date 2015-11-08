@@ -25,11 +25,10 @@ public class Blinky extends Ghost
         if(samePacman.getScore > 30){
             if(frame% 30 >4){
                 moveTowardThis(samePacman.getX(),samePacman.getY());
+            }else{
+                moveTowardThis(26,33);
             }
-        }else{
-            moveTowardThis(26,33);
         }
-        
         
     }    
 }
