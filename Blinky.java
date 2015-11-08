@@ -21,11 +21,13 @@ public class Blinky extends Ghost
     }    
     public void act() 
     {
-        frame++;
-        if(frame% 30 >4){
-            moveTowardThis(samePacman.getX(),samePacman.getY());
+        frame++; //samePacman.getScore
+        if(samePacman.getScore > 30){
+            if(frame% 30 >4){
+                moveTowardThis(samePacman.getX(),samePacman.getY());
+            }
         }else{
-            moveTowardThis(23,23);
+            moveTowardThis(26,33);
         }
         
         
