@@ -20,6 +20,9 @@ public class Pacman extends MovingObject
         score = 0;
     
     }
+    public int getScore(){
+        return score;
+    }
     public void act() 
     {
        if(Greenfoot.isKeyDown("d") && !wallInFront(0)){
