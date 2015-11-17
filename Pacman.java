@@ -13,6 +13,7 @@ public class Pacman extends MovingObject
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     //My change line : in soviet russia, revolution starts you.
+    //THE COMMUNIST REVOLUTION STARTS WITH YOU
     private int score;
     public Pacman(){
         super();
