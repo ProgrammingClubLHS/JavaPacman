@@ -3,7 +3,7 @@ import greenfoot.*;
 /**
  * Write a description of class Pacman here.
  * 
- * @author (your name) 
+ * @author (the communist revolution starts with you) 
  * @version (a version number or a date)
  */
 public class Pacman extends MovingObject 
@@ -11,21 +11,19 @@ public class Pacman extends MovingObject
     /**
      * Act - do whatever the Pacman wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
-     * THE COMMUNIST REVOLUTION STARTS WITH YOU
      */
+    //My change line : in soviet russia, revolution starts you.
     private int score;
     public Pacman(){
         super();
-        getImage().scale(Wall.SIZE,Wall.SIZE);
+        getImage().scale(Wall.SIZE, Wall.SIZE);
         score = 0;
-    
     }
     public int getScore(){
         return score;
     }
-    public void act() 
-    {
-       if(Greenfoot.isKeyDown("d") && !wallInFront(0)){
+    public void act(){
+        if(Greenfoot.isKeyDown("d") && !wallInFront(0)){
             setRotation(0);
         }else if(Greenfoot.isKeyDown("a") && !wallInFront(180)){
             setRotation(180);

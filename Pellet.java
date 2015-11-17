@@ -2,8 +2,8 @@ import greenfoot.*;
 
 
 /**
- * Write a description of class Pellet here.
- * THE COMMUNIST REVOLUTION STARTS WITH YOU!
+ * Write a description of class WALL here.
+ * 
  * @author (your name) 
  * @version (a version number or a date)
  */
@@ -11,7 +11,7 @@ public class Pellet extends Actor
 {
     public Pellet(){
         super();
-        getImage().scale(Wall.SIZE * 2 / 5,Wall.SIZE * 2 / 5);
+        getImage().scale(Wall.SIZE * 2 / 5, Wall.SIZE * 2 / 5);
     }
     
     /**

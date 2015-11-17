@@ -22,11 +22,13 @@ public class Blinky extends Ghost
     public void act() 
     {
         frame++; //samePacman.getScore
-        if(samePacman.getScore > 30){
+        if(samePacman.getScore() > 30){
             if(frame% 30 >4){
                 moveTowardThis(samePacman.getX(),samePacman.getY());
+                getWorld().showText("chase",getWorld().getWidth()*3 / 4, 0);
             }else{
                 moveTowardThis(26,33);
+                getWorld().showText("scatter",getWorld().getWidth()*3 / 4, 0);
             }
         }
         

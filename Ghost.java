@@ -35,6 +35,13 @@ public class Ghost extends MovingObject
         }else{//if( direction == 3)
             setLocation(getX(), getY()-1);
         }
+        if(getX() == 0 && direction == 2){
+            setLocation(getWorld().getWidth(),getY());
+        }
+        
+        if(getX() == getWorld().getWidth() && direction == 0){
+            setLocation(0,getY());
+        }
     }
     
     protected void moveTowardThis(int targetX,int targetY){
@@ -65,9 +72,14 @@ public class Ghost extends MovingObject
                 if(distanceChoices[i] < distanceChoices[directionOfMinDist]){
                     directionOfMinDist = i;
                 }
-//                 Greenfoot.ask("" + distanceChoices[i]);// testing code
+
             }
+            getWorld().showText(distanceChoices[0] + " " + distanceChoices[1] + " "
+                            + distanceChoices[2] + " " + distanceChoices[3],
+                            getWorld().getWidth()/2,getWorld().getHeight()-1);// testing code
+            
             direction = directionOfMinDist;
+            
         }
         moveInDirection();
 
