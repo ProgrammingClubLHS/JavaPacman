@@ -30,7 +30,7 @@ etienne-get eaten
 Level
 Steve-reset on all pellets eaten
 -display lives and game over screen
-
+http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior
 
 
 
