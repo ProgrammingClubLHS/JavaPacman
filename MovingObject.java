@@ -48,6 +48,16 @@ public class MovingObject extends Actor
         }               
         return wallPresence;
     }
+    protected void flipWorld(){
+        if(getX() == 0){
+            setLocation(getWorld().getWidth()-3,getY());
+        }
+        
+        if(getX() > getWorld().getWidth()-2 ){
+            setLocation(2,getY());
+        }
+        
+    }
     public void act() 
     {
         for(int i = 0;i < 1; i++){

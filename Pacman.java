@@ -56,17 +56,12 @@ public class Pacman extends MovingObject
         }else if(Greenfoot.isKeyDown("w") && !wallInFront(270)){
            setRotation(270);
         }
-        if(getX() == 0 && getRotation() == 180){
-            setLocation(getWorld().getWidth(),getY());
-        }
-        
-        if(getX() == getWorld().getWidth() && getRotation() == 0){
-            setLocation(0,getY());
-        }
+
         super.act();
+        flipWorld();
         if(isTouching(Pellet.class)){
             removeTouching(Pellet.class);
-            Greenfoot.playSound("waka.wav");
+            //Greenfoot.playSound();
             score++;
             String scoreOutput = "Score: ";
             if(score < 10){
