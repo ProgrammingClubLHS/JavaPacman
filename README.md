@@ -13,8 +13,8 @@ Pacman needs to
 *-move
 *-eat pellet
 Carter-Power pellet functionality
-Cameron-basic bad animatioon
-David-waka,waka sound
+*Cameron-basic bad animatioon
+?David-waka,waka sound
 Daniel-death animation & reset position
 
 Ghosts needs to
