@@ -36,44 +36,13 @@ public class Pacman extends MovingObject
             }
        
             
-            if((anim % 2) == 0 && getMoving()){
+            if((anim % 2) == 0 && !wallInFront(getRotation())){
+                //This is similar to the code called in the super when deciding on whether or not to move.
                 setImage(pacmanClosed);
             }else{
                 setImage(pacmanOpen);
             }
         anim++;
-    }
-    
-    private boolean getMoving(){
-         if(getRotation()==0){
-            if(!wallInFront(0)){
-                moving = true;
-            }else{
-                moving = false;
-            }
-        }else if(getRotation()==90){
-            if(!wallInFront(90)){
-                moving = true;
-            }else{
-                moving = false;
-            }
-        }else if(getRotation()==180){
-            if(!wallInFront(180)){
-                moving = true;
-            }else{
-                moving = false;
-            }
-        }else if(getRotation()==270){
-            if(!wallInFront(270)){
-                moving = true;
-            }else{
-                moving = false;
-            }
-        }else{
-            moving = false;
-        }
-        
-        return moving;
     }
     
     public void act(){

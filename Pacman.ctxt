@@ -1,14 +1,10 @@
 #BlueJ class context
-comment0.target=Pacman
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pacman\ here.\r\n\ \r\n\ @author\ (the\ communist\ revolution\ starts\ with\ you)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.params=
+comment0.target=Pacman()
 comment1.params=
-comment1.target=Pacman()
+comment1.target=int\ getScore()
 comment2.params=
-comment2.target=int\ getScore()
+comment2.target=void\ animate()
 comment3.params=
-comment3.target=void\ animate()
-comment4.params=
-comment4.target=boolean\ getMoving()
-comment5.params=
-comment5.target=void\ act()
-numComments=6
+comment3.target=void\ act()
+numComments=4
