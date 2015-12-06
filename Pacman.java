@@ -66,6 +66,7 @@ public class Pacman extends MovingObject
         super.act();
         if(isTouching(Pellet.class)){
             removeTouching(Pellet.class);
+            Greenfoot.playSound("waka.wav");
             score++;
             String scoreOutput = "Score: ";
             if(score < 10){
