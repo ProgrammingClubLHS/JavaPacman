@@ -17,6 +17,7 @@ public class Pacman extends MovingObject
     private int score;
     private final GreenfootImage pacmanOpen = new GreenfootImage("Original_PacMan (1).png");
     private final GreenfootImage pacmanClosed = new GreenfootImage("closedPacman.png"); //TODO make this image
+    private final GreenfootSound waka = new GreenfootSound("waka.wav");
     int anim = 0;
     private boolean moving = true;
     public Pacman(int oldScore){
@@ -61,7 +62,9 @@ public class Pacman extends MovingObject
         flipWorld();
         if(isTouching(Pellet.class)){
             removeTouching(Pellet.class);
-            //Greenfoot.playSound();
+            if(!waka.isPlaying()){
+                waka.play();
+            }
             score++;
             String scoreOutput = "Score: ";
             if(score < 10){
