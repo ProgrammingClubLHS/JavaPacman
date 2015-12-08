@@ -10,9 +10,10 @@ Pacman needs to
 Carter-Power pellet functionality
 *Cameron-basic bad animatioon
 ?David-waka,waka sound
-Daniel-death animation & reset position
+XXDANIELXXX-death animation & reset position
 
 Ghosts needs to
+-enter the world correctly
 -have variations
 *-chase pacman
 -scatter
@@ -26,6 +27,7 @@ Level
 Steve-reset on all pellets eaten
 -display lives and game over screen
 http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior
+
 
 
 
