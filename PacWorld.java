@@ -47,7 +47,16 @@ public class PacWorld extends World
     {    
         // Create a new world with 28x32 cells with a cell SIZE of 20x20 pixels.
         super(28, 33, Wall.SIZE); 
-
+        setup(0);
+        
+    }
+    public PacWorld(int score)
+    {
+        super(28, 33, Wall.SIZE); 
+        setup(score);
+    }
+    private void setup(int score)
+    {
         for(int row = 0; row < cell.length; row++){
             for(int col = 0; col < cell[row].length; col++){
                 if(cell[row][col] == 1){
@@ -57,7 +66,7 @@ public class PacWorld extends World
                     Pellet tempPellet = new Pellet();
                     addObject(tempPellet,col,row);
                 }else if(cell[row][col] == 7){
-                    Pacman tempPacman = new Pacman();
+                    Pacman tempPacman = new Pacman(score);
                     addObject(tempPacman,col,row);
                 }else if(cell[row][col] == 6){
                     GhostWall tempWall = new GhostWall();
@@ -66,5 +75,6 @@ public class PacWorld extends World
             }
             
         }
+        
     }
 }
