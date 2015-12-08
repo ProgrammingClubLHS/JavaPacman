@@ -19,12 +19,12 @@ public class Pacman extends MovingObject
     private final GreenfootImage pacmanClosed = new GreenfootImage("closedPacman.png"); //TODO make this image
     int anim = 0;
     private boolean moving = true;
-    public Pacman(){
+    public Pacman(int oldScore){
         super();
         getImage().scale(Wall.SIZE, Wall.SIZE);
         pacmanOpen.scale(Wall.SIZE, Wall.SIZE);
         pacmanClosed.scale(Wall.SIZE, Wall.SIZE);
-        score = 0;
+        score = oldScore;
     }
     public int getScore(){
         return score;
@@ -75,6 +75,12 @@ public class Pacman extends MovingObject
             }
 
             getWorld().showText(scoreOutput, 4, 0);
+        }
+        if(score % 240 ==0){
+            //code to reset world
+            score++;
+            Greenfoot.setWorld(new PacWorld(score));
+            
         }
     }    
 }
