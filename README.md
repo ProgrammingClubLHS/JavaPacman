@@ -9,7 +9,7 @@ Pacman needs to
 *-eat pellet
 Carter-Power pellet functionality
 *Cameron-basic bad animatioon
-?David-waka,waka sound
+*David-waka,waka sound
 XXDANIELXXX-death animation & reset position
 
 Ghosts needs to
@@ -24,7 +24,7 @@ etienne-move
 etienne-get eaten
 
 Level
-Steve-reset on all pellets eaten
+*Steve-reset on all pellets eaten
 -display lives and game over screen
 http://gameinternals.com/post/2072558330/understanding-pac-man-ghost-behavior
 
