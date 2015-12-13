@@ -15,13 +15,14 @@ public class Blinky extends Ghost
         getImage().scale(Wall.SIZE, Wall.SIZE);
         frame = 0;
     }
-    public void addedToWorld(World world){//needed so that we don't have getWorld() return null in the constructor
-        super.addedToWorld(world);
-        samePacman = (Pacman)(world.getObjects(Pacman.class).toArray()[0]);
-    }    
     public void act() 
     {
-
+        if(frame==0){
+            samePacman = (Pacman)(getWorld().getObjects(Pacman.class).toArray()[0]);
+        }
+        if(samePacman.getScore()==30){
+            setLocation(13,12);
+        }
         frame++; //samePacman.getScore
         if(samePacman.getScore() > 30){
             if(frame% 30 >4){
